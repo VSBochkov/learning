@@ -1,4 +1,5 @@
 #include    "data.h"
+#include    "data_structs.h"
 
 int main() {
     Data_factory<std::string, Data> factory;
