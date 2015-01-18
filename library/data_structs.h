@@ -3,6 +3,13 @@
 
 #include    <vector>
 
+enum Enum_Types
+{
+    DataType,
+    ArrayIntType,
+    ArrayDoubleType
+};
+
 class Data
 {
 public:

@@ -2,7 +2,6 @@
 #define     __DATA_H
 
 #include    <map>
-#include    <string>
 #include    <vector>
 
 

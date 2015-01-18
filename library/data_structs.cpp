@@ -1,16 +1,23 @@
 #include    <iostream>
+#include    <stdlib.h>
 #include    "data_structs.h"
 
 ArrayInt::ArrayInt(int size) :
     array(size)
 {
     std::cout << "construct Array int\n";
+    for(int i = 0; i < 10; i++) {
+        array.push_back(rand() % 150);
+    }
 }
 
 ArrayDouble::ArrayDouble(int size) :
     array(size)
 {
     std::cout << "construct Array double\n";
+    for(int i = 0; i < 10; i++) {
+        array.push_back(double(rand() % 150) / 100);
+    }
 }
 
 ArrayInt::~ArrayInt()
