@@ -1,7 +1,7 @@
 #include    "data.h"
 
 int main() {
-    Data_factory factory;
+    Data_factory<std::string, Data> factory;
     std::string keyDouble("Data");
     std::string keyInt("Data");
     factory.add<ArrayDouble>(keyDouble);

@@ -42,17 +42,5 @@ void ArrayDouble::print() const
     std::cout << "\n";
 }
 
-Data* Data_factory::create_(std::string &key) {
-    std::map<std::string, Factory_interface*>::iterator it = factory.find(key);
-    if(it != factory.end()) {
-        return it->second->create();
-    }
-}
-
-Data_factory::Data_factory() {
-
-}
-
-Data_factory::~Data_factory() {
-
-}
+/*Data* Data_factory::create_(std::string &key) {
+}*/
